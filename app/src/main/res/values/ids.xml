@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_cyber_security" type="id" />
+    <item name="btn_python" type="id" />
+    <item name="btn_app_development" type="id" />
+    <item name="btn_ux_ui" type="id" />
+    <item name="tv_courses" type="id" />
+    <item name="tv_profile_title" type="id" />
+    <item name="iv_profile_picture" type="id" />
+    <item name="tv_user_name" type="id" />
+    <item name="tv_user_email" type="id" />
+    <item name="btn_edit_profile" type="id" />
+    <item name="tv_enroll_courses" type="id" />
+    <item name="tv_courses_progress" type="id" />
+    <item name="iv_level_progress" type="id" />
+    <item name="tv_level" type="id" />
+    <item name="btn_delete_profile" type="id" />
+    <item name="btn_log_out" type="id" />
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFFCC">
+
+    <!-- Header Section -->
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true"
+        android:text="Coures Details"
+        android:textSize="24sp"
+        android:textColor="#2C5F2D"
+        android:textStyle="bold"
+        android:fontFamily="monospace" />
+
+    <!-- Icons -->
+    <ImageView
+        android:id="@+id/homeIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_home" />
+
+    <ImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_profile" />
+
+    <!-- Green Bar Title -->
+    <TextView
+        android:id="@+id/courseTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerText"
+        android:layout_marginTop="16dp"
+        android:background="#388E3C"
+        android:padding="8dp"
+        android:text="Cyber Security"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Content Section -->
+    <LinearLayout
+        android:id="@+id/courseContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseTitle"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#E6FFE6"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/courseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This introductory course takes you inside the world of cybersecurity. You will learn cybersecurity basics to protect your personal digital life and gain insights into the biggest security challenges companies, governments, and educational institutions face today. Cybersecurity professionals who can protect and defend an organization’s network are in high demand."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="#2C5F2D"
+            android:fontFamily="sans-serif" />
+
+        <!-- Enroll Button -->
+        <Button
+            android:id="@+id/enrollButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="#388E3C"
+            android:text="Enroll Now"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

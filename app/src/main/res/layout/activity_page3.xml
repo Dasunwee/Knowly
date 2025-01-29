@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    android:padding="16dp">
+
+    <!-- Home Icon Button -->
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_home"
+        android:contentDescription="Home Button" />
+
+    <!-- Profile Title -->
+    <TextView
+        android:id="@+id/tv_profile_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Profile"
+        android:textColor="@color/dark_green"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/iv_profile_picture"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/tv_profile_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circle_background"
+        android:src="@drawable/ic_user"
+        android:contentDescription="Profile Picture" />
+
+    <!-- User Name -->
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_profile_picture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="User Name"
+        android:textColor="@color/dark_green"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- User Email -->
+    <TextView
+        android:id="@+id/tv_user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="sample.email@gmail.com"
+        android:textColor="@color/dark_green"
+        android:textSize="14sp" />
+
+    <!-- Edit Profile Button -->
+    <Button
+        android:id="@+id/btn_edit_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_user_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/dark_green"
+        android:text="Edit Profile"
+        android:textColor="@color/white" />
+
+    <!-- Enroll Courses Section -->
+    <TextView
+        android:id="@+id/tv_enroll_courses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_edit_profile"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Enroll Courses"
+        android:textColor="@color/dark_green"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Courses Progress -->
+    <TextView
+        android:id="@+id/tv_courses_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_enroll_courses"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Cyber Security - 50%\nPython - 33%"
+        android:textColor="@color/dark_green"
+        android:textSize="14sp" />
+
+    <!-- Level Progress Icon -->
+    <ImageView
+        android:id="@+id/iv_level_progress"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/tv_courses_progress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_progress"
+        android:contentDescription="Level Progress" />
+
+    <!-- Level Text -->
+    <TextView
+        android:id="@+id/tv_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_level_progress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="Your Level - 28%"
+        android:textColor="@color/dark_blue"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Delete Profile Button -->
+    <Button
+        android:id="@+id/btn_delete_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_level"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:backgroundTint="@color/dark_green"
+        android:text="Delete Profile"
+        android:textColor="@color/white" />
+
+    <!-- Log Out Button -->
+    <Button
+        android:id="@+id/btn_log_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_level"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/dark_green"
+        android:text="Log Out"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

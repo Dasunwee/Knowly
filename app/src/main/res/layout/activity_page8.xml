@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A8E6A1"
+    android:padding="16dp">
+
+    <!-- Top Bar with Icons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:padding="8dp">
+
+        <!-- Home Icon -->
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_home"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Home Icon" />
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Profile Icon -->
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_profile"
+            android:contentDescription="Profile Icon" />
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resources"
+        android:textSize="36sp"
+        android:textColor="#388E3C"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <!-- Section Title -->
+    <TextView
+        android:id="@+id/section_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cyber Security"
+        android:textSize="24sp"
+        android:background="#388E3C"
+        android:padding="8dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/title"
+        android:layout_marginTop="16dp"
+        android:gravity="center" />
+
+    <!-- Links -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/section_title"
+        android:layout_marginTop="16dp">
+
+        <!-- YouTube Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YouTube:"
+            android:textColor="#388E3C"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://youtu.be/inWWhr5tnEA\nhttps://youtu.be/v7BNtpw53AA"
+            android:textColor="#0000FF"
+            android:autoLink="web"
+            android:layout_marginBottom="16dp" />
+
+        <!-- GitHub Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GitHub:"
+            android:textColor="#388E3C"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://github.com/topics/cybersecurity"
+            android:textColor="#0000FF"
+            android:autoLink="web"
+            android:layout_marginBottom="16dp" />
+
+        <!-- W3Schools Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="W3school:"
+            android:textColor="#388E3C"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://www.w3schools.com/cybersecurity/"
+            android:textColor="#0000FF"
+            android:autoLink="web" />
+    </LinearLayout>
+</RelativeLayout>

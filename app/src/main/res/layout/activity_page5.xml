@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCF2CC"
+    android:padding="16dp">
+
+    <!-- Profile Button -->
+    <ImageButton
+        android:id="@+id/btn_profile"
+        android:layout_width="47dp"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Profile Button"
+        android:src="@drawable/ic_profile" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tv_explore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXPLORE"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#228B22"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp" />
+
+    <!-- Courses Button -->
+    <Button
+        android:id="@+id/btn_courses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Courses"
+        android:backgroundTint="#228B22"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="280dp"
+        android:layout_centerHorizontal="true"
+        android:padding="12dp" />
+
+    <!-- Quizzes Button -->
+    <Button
+        android:id="@+id/btn_quizzes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quizzes"
+        android:backgroundTint="#228B22"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/btn_courses"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <!-- Resources Button -->
+    <Button
+        android:id="@+id/btn_resources"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resources"
+        android:backgroundTint="#228B22"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/btn_quizzes"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+</RelativeLayout>
