@@ -21,6 +21,8 @@ public class page2 extends AppCompatActivity {
         EdgeToEdge.enable(this); // Assuming EdgeToEdge is a library for handling full-screen mode
         setContentView(R.layout.activity_page2);
 
+
+
         // Initialize the signup button
         signup = findViewById(R.id.btnSignUp);
         signup.setOnClickListener(new View.OnClickListener() {

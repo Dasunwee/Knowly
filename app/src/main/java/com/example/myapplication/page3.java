@@ -23,6 +23,8 @@ public class page3 extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_page3);
 
+
+
         logout = findViewById(R.id.btn_log_out);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
