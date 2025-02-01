@@ -37,7 +37,7 @@ public class page4 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to page3 when the signup button is clicked
-                Intent intent = new Intent(page4.this, page2.class);
+                Intent intent = new Intent(page4.this, page5.class);
                 startActivity(intent);
             }
         });
