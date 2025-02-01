@@ -32,7 +32,7 @@
         android:layout_marginTop="160dp"
         android:layout_centerHorizontal="true"
         android:text="Quiz Details"
-        android:textSize="24sp"
+        android:textSize="26sp"
         android:textColor="#2C5F2D"
         android:textStyle="bold"
         android:fontFamily="monospace" />
