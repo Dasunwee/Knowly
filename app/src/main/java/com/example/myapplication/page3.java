@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,7 +24,7 @@ public class page3 extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_page3);
 
-        logout = findViewById(R.id.btn_log_out);
+        logout = findViewById(R.id.logout_button);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,7 +34,7 @@ public class page3 extends AppCompatActivity {
             }
         });
 
-        homeP = findViewById(R.id.btn_home);
+        homeP = findViewById(R.id.home_icon);
         homeP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,16 +43,18 @@ public class page3 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.btn_log_out), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.logout_button), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.btn_home), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.home_icon), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+
     }
 }

@@ -20,12 +20,23 @@
             android:src="@drawable/ic_home"
             android:layout_alignParentStart="true" />
 
-        <ImageView
-            android:id="@+id/profileIcon"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:layout_width="47dp"
+            android:layout_height="46dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/profile_button"
             android:src="@drawable/ic_profile"
-            android:layout_alignParentEnd="true" />
+            android:text="profile"
+             />
     </RelativeLayout>
 
     <!-- Title -->
