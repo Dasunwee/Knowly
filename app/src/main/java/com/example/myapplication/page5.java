@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,10 +16,9 @@ import androidx.core.view.WindowInsetsCompat;
 public class page5 extends AppCompatActivity {
 
     private Button courses;
-
     private Button quizzes;
-
     private Button resourses;
+    private ImageButton profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,6 @@ public class page5 extends AppCompatActivity {
         courses.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Navigate to page3 when the signup button is clicked
                 Intent intent = new Intent(page5.this, page6.class);
                 startActivity(intent);
             }
@@ -40,7 +39,6 @@ public class page5 extends AppCompatActivity {
         quizzes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Navigate to page3 when the signup button is clicked
                 Intent intent = new Intent(page5.this, page7.class);
                 startActivity(intent);
             }
@@ -50,8 +48,17 @@ public class page5 extends AppCompatActivity {
         resourses.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Navigate to page3 when the signup button is clicked
                 Intent intent = new Intent(page5.this, page10.class);
+                startActivity(intent);
+            }
+        });
+
+        profile = findViewById(R.id.btn_profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to page3 when the profile button is clicked
+                Intent intent = new Intent(page5.this, page3.class);
                 startActivity(intent);
             }
         });
@@ -75,6 +82,10 @@ public class page5 extends AppCompatActivity {
             return insets;
         });
 
-
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.btn_profile), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
     }
 }
