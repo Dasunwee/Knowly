@@ -16,6 +16,8 @@ public class page6 extends AppCompatActivity {
     private Button cyber;
     private ImageButton profile;
 
+    private Button home;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +29,16 @@ public class page6 extends AppCompatActivity {
             public void onClick(View v) {
                 // Navigate to page3 when the signup button is clicked
                 Intent intent = new Intent(page6.this, Page9.class);
+                startActivity(intent);
+            }
+        });
+
+        profile = findViewById(R.id.home_icon);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to page3 when the profile button is clicked
+                Intent intent = new Intent(page6.this, page5.class);
                 startActivity(intent);
             }
         });
@@ -51,6 +63,13 @@ public class page6 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.home_icon), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+
 
     }
 }
