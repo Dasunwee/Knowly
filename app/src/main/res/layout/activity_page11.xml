@@ -32,7 +32,7 @@
         android:layout_marginTop="160dp"
         android:layout_centerHorizontal="true"
         android:text="Quiz Details"
-        android:textSize="26sp"
+        android:textSize="24sp"
         android:textColor="#2C5F2D"
         android:textStyle="bold"
         android:fontFamily="monospace" />
@@ -141,6 +141,7 @@
                 android:paddingStart="8dp" />
 
             <Button
+                android:id="@+id/getStartButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#388E3C"
