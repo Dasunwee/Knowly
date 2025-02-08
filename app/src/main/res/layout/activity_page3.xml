@@ -11,13 +11,13 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <!-- Header -->
-
         <!-- User Info Section -->
+
+        <!-- Profile Card -->
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginBottom="16dp"
             android:background="#C9EFB7"
             android:elevation="4dp"
@@ -25,9 +25,16 @@
 
             <TextView
                 android:id="@+id/profile_title"
-                android:layout_width="wrap_content"
+                android:layout_width="167dp"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="false"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="264dp"
+                android:layout_marginBottom="33dp"
                 android:text="Profile"
                 android:textColor="#4CAF50"
                 android:textSize="24sp"
@@ -35,27 +42,21 @@
 
             <ImageButton
                 android:id="@+id/home_icon"
-                android:layout_width="39dp"
-                android:layout_height="40dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:background="#03FFFFFF"
-                android:contentDescription="Home Icon"
-                android:foreground="@drawable/ic_home"
-                android:src="@drawable/ic_home"
-                android:visibility="visible"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:layout_margin="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/ic_home"
+                android:contentDescription="Home Icon" />
         </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginHorizontal="16dp"
             android:layout_marginBottom="16dp"
-            android:background="#FFFFFF"
-            android:backgroundTint="#E8F5E9"
-            android:clipToOutline="true"
+            android:background="#E8F5E9"
             android:elevation="6dp"
             android:gravity="center"
             android:orientation="vertical"
@@ -68,7 +69,7 @@
                 android:layout_gravity="center"
                 android:contentDescription="User Picture"
                 android:src="@drawable/ic_user_placeholder"
-                android:tint="#004CAF50" />
+               />
 
             <TextView
                 android:id="@+id/user_name"
@@ -93,7 +94,6 @@
                 android:id="@+id/edit_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:layout_marginTop="12dp"
                 android:backgroundTint="#4CAF50"
                 android:elevation="4dp"
@@ -106,10 +106,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
             android:layout_marginBottom="16dp"
             android:background="#FFFFFF"
-            android:clipToOutline="true"
             android:elevation="6dp"
             android:orientation="vertical"
             android:padding="16dp">
@@ -163,37 +161,41 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <!-- Action Buttons -->
+        <!-- Buttons: Delete Profile & Logout -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="2">
 
             <Button
                 android:id="@+id/delete_profile"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
                 android:layout_weight="1"
+                android:layout_marginEnd="8dp"
                 android:backgroundTint="#E53935"
                 android:elevation="4dp"
                 android:text="Delete Profile"
+                android:textSize="16sp"
                 android:textColor="#FFFFFF" />
 
             <Button
+
                 android:id="@+id/logout_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
                 android:layout_weight="1"
+                android:layout_marginStart="8dp"
                 android:backgroundTint="#4CAF50"
                 android:elevation="4dp"
                 android:text="Log Out"
-                android:textColor="#FFFFFF" />
-
-
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                tools:ignore="ButtonStyle" />
         </LinearLayout>
+
     </LinearLayout>
 </ScrollView>
