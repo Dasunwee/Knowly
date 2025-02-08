@@ -140,14 +140,6 @@
             android:autoLink="web" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/cyberSecurityButton"
-        android:layout_width="280dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="12dp"
-        android:backgroundTint="#388E3C"
-        android:text="Cyber Security"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold" />
+
 
 </RelativeLayout>

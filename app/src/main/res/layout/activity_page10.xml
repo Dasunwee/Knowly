@@ -62,54 +62,55 @@
 
         <Button
             android:id="@+id/uxUiButton"
-            android:layout_width="280dp"
-            android:layout_height="56dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="UX / UI"
-            android:backgroundTint="#388E3C"
+            android:backgroundTint="#228B22"
             android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:layout_marginTop="12dp" />
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
 
         <Button
             android:id="@+id/cyberSecurityButton"
-            android:layout_width="280dp"
-            android:layout_height="56dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Cyber Security"
-            android:backgroundTint="#388E3C"
+            android:backgroundTint="#228B22"
             android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:layout_marginTop="12dp"/>
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
 
 
         <Button
             android:id="@+id/appDevButton"
-            android:layout_width="280dp"
-            android:layout_height="56dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="App Development"
-            android:backgroundTint="#388E3C"
+            android:backgroundTint="#228B22"
             android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:layout_marginTop="12dp" />
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
 
         <Button
             android:id="@+id/pythonButton"
-            android:layout_width="280dp"
-            android:layout_height="56dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Python"
-            android:backgroundTint="#388E3C"
+            android:backgroundTint="#228B22"
             android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:layout_marginTop="12dp" />
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
 
         <Button
             android:id="@+id/basicNetworkButton"
-            android:layout_width="280dp"
-            android:layout_height="56dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Basic Network"
-            android:backgroundTint="#388E3C"
+            android:backgroundTint="#228B22"
             android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:layout_marginTop="12dp" />
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
 
     </LinearLayout>
 
