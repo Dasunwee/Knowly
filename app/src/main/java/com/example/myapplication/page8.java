@@ -21,7 +21,7 @@ public class page8 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_page8); // Make sure this layout contains cyberSecurityButton
+        setContentView(R.layout.activity_page8);
 
         // Find the Cyber Security Button
         resourcedetails = findViewById(R.id.cyberSecurityButton);
