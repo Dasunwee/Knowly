@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
         android:layout_centerHorizontal="true"
-        android:text="Coures Details"
+        android:text="Course Details"
         android:textSize="24sp"
         android:textColor="#2C5F2D"
         android:textStyle="bold"
