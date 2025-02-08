@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -7,7 +7,7 @@
     android:gravity="center_horizontal"
     android:padding="16dp">
 
-    <!-- Header Section -->
+    <!--  Header Section  -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,20 +15,31 @@
 
         <ImageView
             android:id="@+id/homeIcon"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:src="@drawable/ic_home"
-            android:layout_alignParentStart="true" />
+            android:layout_width="92dp"
+            android:layout_height="63dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_home"/>
 
-        <ImageView
-            android:id="@+id/profileIcon"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:layout_width="47dp"
+            android:layout_height="46dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/profile_button"
             android:src="@drawable/ic_profile"
-            android:layout_alignParentEnd="true" />
-    </RelativeLayout>
+            android:text="profile"/>
 
-    <!-- Title -->
+    </RelativeLayout>
+    <!--  Title  -->
     <TextView
         android:id="@+id/tv_explore"
         android:layout_width="wrap_content"
@@ -38,9 +49,9 @@
         android:textStyle="bold"
         android:textColor="#228B22"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp" />
+        android:layout_marginTop="80dp"/>
 
-    <!-- Buttons Section -->
+    <!--  Buttons Section  -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,7 +67,7 @@
             android:backgroundTint="#388E3C"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
-            android:layout_marginTop="12dp" />
+            android:layout_marginTop="12dp"/>
 
         <Button
             android:id="@+id/cyberSecurityButton"
@@ -66,7 +77,7 @@
             android:backgroundTint="#388E3C"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
-            android:layout_marginTop="12dp" />
+            android:layout_marginTop="12dp"/>
 
         <Button
             android:id="@+id/appDevButton"
@@ -76,7 +87,7 @@
             android:backgroundTint="#388E3C"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
-            android:layout_marginTop="12dp" />
+            android:layout_marginTop="12dp"/>
 
         <Button
             android:id="@+id/pythonButton"
@@ -86,7 +97,7 @@
             android:backgroundTint="#388E3C"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
-            android:layout_marginTop="12dp" />
+            android:layout_marginTop="12dp"/>
 
         <Button
             android:id="@+id/basicNetworkButton"
@@ -96,8 +107,6 @@
             android:backgroundTint="#388E3C"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
-            android:layout_marginTop="12dp" />
-
+            android:layout_marginTop="12dp"/>
     </LinearLayout>
-
 </LinearLayout>
