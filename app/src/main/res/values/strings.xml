@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="profile_button">Profile</string>
-
+    <string name="profile_button">Profile Button</string>
 </resources>
