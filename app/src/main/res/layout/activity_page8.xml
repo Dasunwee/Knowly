@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#A8E6A1"
-    android:padding="16dp">
 
-    <!-- Top Bar with Icons -->
+    android:padding="16dp">
+    <!--  Top Bar with Icons  -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,31 +13,41 @@
         android:layout_alignParentTop="true"
         android:padding="8dp">
 
-        <!-- Home Icon -->
+        <!--  Home Icon  -->
         <ImageView
             android:id="@+id/home_icon"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_home"
             android:layout_marginEnd="16dp"
-            android:contentDescription="Home Icon" />
+            android:contentDescription="Home Icon"/>
 
-        <!-- Spacer -->
+        <!--  Spacer  -->
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"/>
 
-        <!-- Profile Icon -->
-        <ImageView
-            android:id="@+id/profile_icon"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+        <!--  Profile Icon  -->
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:layout_width="47dp"
+            android:layout_height="46dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/profile_button"
             android:src="@drawable/ic_profile"
-            android:contentDescription="Profile Icon" />
+            android:text="profile"/>
     </LinearLayout>
 
-    <!-- Title -->
+    <!--  Title  -->
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -49,9 +58,10 @@
         android:fontFamily="sans-serif-condensed"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp" />
+        android:layout_marginTop="100dp"
+        />
 
-    <!-- Section Title -->
+    <!--  Section Title  -->
     <TextView
         android:id="@+id/section_title"
         android:layout_width="match_parent"
@@ -63,9 +73,10 @@
         android:textColor="#FFFFFF"
         android:layout_below="@id/title"
         android:layout_marginTop="16dp"
-        android:gravity="center" />
+        android:gravity="center"
+        />
 
-    <!-- Links -->
+    <!--  Links  -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -73,7 +84,7 @@
         android:layout_below="@id/section_title"
         android:layout_marginTop="16dp">
 
-        <!-- YouTube Section -->
+        <!--  YouTube Section  -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -82,7 +93,7 @@
             android:textSize="18sp"
             android:fontFamily="sans-serif-condensed"
             android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -90,9 +101,9 @@
             android:text="https://youtu.be/inWWhr5tnEA\nhttps://youtu.be/v7BNtpw53AA"
             android:textColor="#0000FF"
             android:autoLink="web"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"/>
 
-        <!-- GitHub Section -->
+        <!--  GitHub Section  -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -101,7 +112,7 @@
             android:textSize="18sp"
             android:fontFamily="sans-serif-condensed"
             android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -109,9 +120,9 @@
             android:text="https://github.com/topics/cybersecurity"
             android:textColor="#0000FF"
             android:autoLink="web"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"/>
 
-        <!-- W3Schools Section -->
+        <!--  W3Schools Section  -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -120,13 +131,15 @@
             android:textSize="18sp"
             android:fontFamily="sans-serif-condensed"
             android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="https://www.w3schools.com/cybersecurity/"
             android:textColor="#0000FF"
-            android:autoLink="web" />
+            android:autoLink="web"/>
     </LinearLayout>
+
+
 </RelativeLayout>
