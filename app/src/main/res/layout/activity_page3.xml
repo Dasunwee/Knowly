@@ -34,8 +34,8 @@
     <!-- Profile Image -->
     <ImageView
         android:id="@+id/iv_profile_picture"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_below="@id/tv_profile_title"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
