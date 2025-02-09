@@ -23,7 +23,7 @@ public class Page9 extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_page9);
 
-        // Initialize the signup button
+
         pro4 = findViewById(R.id.profileIcon);
         pro4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +34,7 @@ public class Page9 extends AppCompatActivity {
             }
         });
 
-        // Initialize the login2 button
+
         home4 = findViewById(R.id.homeIcon);
         home4.setOnClickListener(new View.OnClickListener() {
             @Override
