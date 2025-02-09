@@ -19,22 +19,22 @@
         android:fontFamily="monospace" />
 
     <!-- Icons -->
-    <ImageView
+    <ImageButton
         android:id="@+id/homeIcon"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="47dp"
+        android:layout_height="51dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="56dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="85dp"
         android:src="@drawable/ic_home" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/profileIcon"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="48dp"
+        android:layout_height="51dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
         android:src="@drawable/ic_profile" />
 
     <!-- Green Bar Title -->

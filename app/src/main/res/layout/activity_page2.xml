@@ -136,10 +136,10 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:text=" Login"
-                android:textColor="#FFFFFF"
+                android:textColor="#795548"
                 android:textSize="10sp"
                 android:textStyle="bold"
-                tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+                tools:ignore="HardcodedText,SmallSp,TouchTargetSizeCheck" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
