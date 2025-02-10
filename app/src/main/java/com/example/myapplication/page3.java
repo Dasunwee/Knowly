@@ -27,7 +27,7 @@ public class page3 extends AppCompatActivity {
         // Home button event
         homeP = findViewById(R.id.home_icon);
         homeP.setOnClickListener(v -> {
-            Intent intent = new Intent(page3.this, page2.class);
+            Intent intent = new Intent(page3.this, page5.class);
             startActivity(intent);
         });
     }

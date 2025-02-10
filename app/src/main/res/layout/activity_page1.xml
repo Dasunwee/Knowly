@@ -32,7 +32,7 @@
         android:textColor="@color/dark_green"
         android:textSize="52sp"
         android:textStyle="bold"
-        tools:ignore="HardcodedText" />
+        tools:ignore="DuplicateIds,HardcodedText" />
 
     <TextView
         android:id="@+id/descriptionText"
@@ -46,7 +46,7 @@
         android:textColor="#388E3C"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,RtlCompat" />
 
     <TextView
         android:id="@+id/descriptionText"
@@ -64,11 +64,11 @@
 
     <Button
         android:id="@+id/getStartButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:backgroundTint="@color/dark_green"
-
+        android:padding="20dp"
         android:text="GET STARTED"
         android:textSize="16sp"
         android:textAllCaps="true"
