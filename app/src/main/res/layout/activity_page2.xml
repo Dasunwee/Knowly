@@ -45,7 +45,7 @@
             android:layout_marginBottom="16dp" />
 
         <EditText
-            android:id="@+id/etEmail"
+            android:id="@+id/emailInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints=""
@@ -57,7 +57,7 @@
             tools:ignore="HardcodedText" />
 
         <EditText
-            android:id="@+id/etPassword"
+            android:id="@+id/passwordInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
@@ -67,7 +67,7 @@
             android:layout_marginBottom="16dp" />
 
         <EditText
-            android:id="@+id/etConfirmPassword"
+            android:id="@+id/confirmPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints=""

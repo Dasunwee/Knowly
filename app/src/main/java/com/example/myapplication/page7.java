@@ -2,61 +2,32 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class page7 extends AppCompatActivity {
 
-
     private ImageButton profile;
-    private Button quizdetails;
+    private Button quizDetails;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_page7);
 
-
+        // Initialize UI elements
         profile = findViewById(R.id.btn_profile);
-        profile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Navigate to page3 when the profile button is clicked
-                Intent intent = new Intent(page7.this, page3.class);
-                startActivity(intent);
-            }
-        });
+        quizDetails = findViewById(R.id.cyber_security_button);
 
-        quizdetails = findViewById(R.id.cyber_security_button);
-        quizdetails.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Navigate to page3 when the profile button is clicked
-                Intent intent = new Intent(page7.this, page11.class);
-                startActivity(intent);
-            }
-        });
+        // Set up button click listeners
+        profile.setOnClickListener(v -> navigateTo(page3.class));
+        quizDetails.setOnClickListener(v -> navigateTo(page11.class));
+    }
 
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.btn_profile), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.cyber_security_button), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
-
+    // Navigation utility method
+    private void navigateTo(Class<?> targetPage) {
+        startActivity(new Intent(page7.this, targetPage));
     }
 }
