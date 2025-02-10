@@ -15,7 +15,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class page8 extends AppCompatActivity {
     private ImageButton profile;
-    private Button resourcedetails;
+    private ImageButton home;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,19 +24,35 @@ public class page8 extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_page8);
 
-        // Find the Cyber Security Button
-        resourcedetails = findViewById(R.id.cyberSecurityButton);
 
-        if (resourcedetails != null) {
-            resourcedetails.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(page8.this, page10.class);
-                    startActivity(intent);
-                }
-            });
-        } else {
-            Log.e("page8", "❌ Error: cyberSecurityButton not found in activity_page8.xml");
-        }
+        home = findViewById(R.id.home_icon);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to page3 when the signup button is clicked
+                Intent intent = new Intent(page8.this, page5.class);
+                startActivity(intent);
+            }
+        });
+
+        profile = findViewById(R.id.btn_profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to page3 when the signup button is clicked
+                Intent intent = new Intent(page8.this, page3.class);
+                startActivity(intent);
+            }
+        });
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.home_icon), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.btn_profile), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
     }
 }

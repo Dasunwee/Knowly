@@ -1,23 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
     android:padding="16dp"
-    android:background="#DFF8D8">
+    android:background="@drawable/welcome1">
 
     <TextView
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+
         android:gravity="center"
-        android:text="WELCOME TO\nKNOWLY"
+        android:text="WELCOME TO"
         android:textColor="#388E3C"
         android:textSize="32sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_marginTop="-15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:text="KNOWLY"
+        android:textColor="@color/dark_green"
+        android:textSize="52sp"
         android:textStyle="bold"
         tools:ignore="HardcodedText" />
 
@@ -25,36 +38,41 @@
         android:id="@+id/descriptionText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="With Knowly, you can:\n\n- Access a variety of courses\n- Take quizzes to test your knowledge\n- Discover useful learning resources"
-        android:textSize="16sp"
-        android:textColor="#333333"
+
         android:gravity="center"
-        android:background="#E8F5E9"
-        android:padding="12dp"
+        android:padding="2dp"
+        android:text="With Knowly,"
+        android:textAlignment="viewStart"
+        android:textColor="#388E3C"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="  Explore diverse courses \n  Test your knowledge with quizzes\n  Discover helpful learning resources"
+        android:textAlignment="viewStart"
+        android:textColor="#388E3C"
+        android:textSize="18sp"
+        android:textStyle="bold"
         tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/getStartButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        android:backgroundTint="#4CAF50"
-        android:padding="12dp"
-        android:text="GET STARTED"
-        android:textAllCaps="true"
-        android:textColor="#263238"
-        tools:ignore="HardcodedText" />
+        android:backgroundTint="@color/dark_green"
 
-    <TextView
-        android:id="@+id/footerText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="We’re excited to have you on board! Knowly is here to help you learn,\ngrow, and explore new educational opportunities, all while supporting\nthe United Nations’ Quality Education goal."
-        android:textSize="14sp"
-        android:textColor="#555555"
-        android:gravity="center"
-        android:layout_marginTop="24dp"
+        android:text="GET STARTED"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
         tools:ignore="HardcodedText" />
 
 </LinearLayout>

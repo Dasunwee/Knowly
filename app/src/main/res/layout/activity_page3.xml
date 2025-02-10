@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DFF6DD"
+    android:background="@drawable/signup"
     android:padding="16dp">
 
     <LinearLayout
@@ -19,13 +19,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:background="#C9EFB7"
+
             android:elevation="4dp"
-            android:padding="8dp">
+            >
 
             <TextView
                 android:id="@+id/profile_title"
-                android:layout_width="167dp"
+                android:layout_width="211dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="false"
                 android:layout_alignParentTop="true"
@@ -33,11 +33,11 @@
                 android:layout_alignParentBottom="false"
                 android:layout_marginStart="17dp"
                 android:layout_marginTop="22dp"
-                android:layout_marginEnd="264dp"
+                android:layout_marginEnd="150dp"
                 android:layout_marginBottom="33dp"
                 android:text="Profile"
-                android:textColor="#4CAF50"
-                android:textSize="24sp"
+                android:textColor="@color/dark_green"
+                android:textSize="44sp"
                 android:textStyle="bold" />
 
             <ImageButton
@@ -45,10 +45,11 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_alignParentEnd="true"
-                android:layout_margin="16dp"
+                android:layout_margin="30dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="28dp"
-                android:background="@drawable/ic_home"
+                android:layout_marginEnd="22dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/myhome"
                 android:contentDescription="Home Icon" />
         </RelativeLayout>
 
@@ -56,11 +57,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:background="#E8F5E9"
+
             android:elevation="6dp"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="10dp">
 
             <ImageView
                 android:id="@+id/profile_picture"
@@ -68,7 +69,7 @@
                 android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:contentDescription="User Picture"
-                android:src="@drawable/ic_user_placeholder"
+                android:src="@drawable/profilegreen"
                />
 
             <TextView
@@ -77,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="User Name"
-                android:textColor="#4CAF50"
+                android:textColor="@color/dark_green"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -87,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="sample.email@gmail.com"
-                android:textColor="#8BC34A"
+                android:textColor="@color/dark_green"
                 android:textSize="14sp" />
 
             <Button
@@ -95,7 +96,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="@color/dark_green"
                 android:elevation="4dp"
                 android:padding="8dp"
                 android:text="Edit Profile"
@@ -107,17 +108,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:background="#FFFFFF"
+
             android:elevation="6dp"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="10dp">
 
             <TextView
                 android:id="@+id/enroll_courses_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Enroll Courses"
-                android:textColor="#4CAF50"
+                android:text="Enrolled Courses"
+                android:textColor="@color/dark_green"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -141,12 +142,12 @@
 
             <ImageView
                 android:id="@+id/level_icon"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
                 android:contentDescription="Level Icon"
-                android:src="@drawable/ic_level"
+                android:src="@drawable/progress"
                 android:tint="#004CAF50" />
 
             <TextView
@@ -176,7 +177,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="#E53935"
+                android:backgroundTint="#8B0000"
                 android:elevation="4dp"
                 android:text="Delete Profile"
                 android:textSize="16sp"
@@ -189,7 +190,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="@color/dark_green"
                 android:elevation="4dp"
                 android:text="Log Out"
                 android:textSize="16sp"

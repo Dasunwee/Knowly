@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CCFFCC">
+    android:background="@drawable/quizd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:padding="8dp">
+
+        <!-- Home Icon -->
+
+        <ImageButton
+            android:id="@+id/home_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/myhome"
+            android:contentDescription="Home Icon" />
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Profile Icon -->
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/profilegreen"
+            android:contentDescription="Profile Icon" />
+    </LinearLayout>
 
     <!-- Header Section -->
     <TextView
@@ -13,38 +55,19 @@
         android:layout_marginTop="160dp"
         android:layout_centerHorizontal="true"
         android:text="Course Details"
-        android:textSize="24sp"
-        android:textColor="#2C5F2D"
+        android:textSize="46sp"
+        android:textColor="@color/dark_green"
         android:textStyle="bold"
-        android:fontFamily="monospace" />
+         />
 
-    <!-- Icons -->
-    <ImageView
-        android:id="@+id/homeIcon"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="56dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/ic_home" />
 
-    <ImageView
-        android:id="@+id/profileIcon"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/ic_profile" />
-
-    <!-- Green Bar Title -->
     <TextView
         android:id="@+id/courseTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/headerText"
         android:layout_marginTop="16dp"
-        android:background="#388E3C"
+        android:background="@color/dark_green"
         android:padding="8dp"
         android:text="Cyber Security"
         android:textColor="#FFFFFF"
@@ -84,7 +107,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
-            android:background="#388E3C"
+            android:background="@color/dark_green"
             android:text="Enroll Now"
             android:textColor="#FFFFFF"
             android:paddingLeft="24dp"
@@ -92,6 +115,7 @@
             android:paddingTop="12dp"
             android:paddingBottom="12dp"
             android:textStyle="bold" />
+
     </LinearLayout>
 
 </RelativeLayout>

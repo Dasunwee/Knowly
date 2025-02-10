@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#CCF2CC"
+    android:background="@drawable/signup"
     android:padding="16dp">
 
     <!-- Title -->

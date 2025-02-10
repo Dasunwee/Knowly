@@ -1,116 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#CCF2CC"
-    android:gravity="center_horizontal"
+    android:background="@drawable/quizzes"
     android:padding="16dp">
 
-    <!-- Header Section -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp">
-
-        <ImageView
-            android:id="@+id/homeIcon"
-            android:layout_width="92dp"
-            android:layout_height="63dp"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="16dp"
-            android:src="@drawable/ic_home" />
-
-        <ImageButton
-            android:id="@+id/btn_profile"
-            android:layout_width="47dp"
-            android:layout_height="46dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="@string/profile_button"
-            android:src="@drawable/ic_profile"
-            android:text="profile"
-             />
-    </RelativeLayout>
-
-    <!-- Title -->
     <TextView
-        android:id="@+id/tv_explore"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="RESOURCES"
-        android:textSize="46sp"
-        android:textStyle="bold"
-        android:textColor="#228B22"
+        android:textSize="36sp"
+        android:textColor="@color/dark_green"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp" />
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold" />
 
     <!-- Buttons Section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="40dp">
+        android:layout_below="@id/title"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="16dp">
 
         <Button
             android:id="@+id/uxUiButton"
-            android:layout_width="280dp"
-            android:layout_height="56dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="UX / UI"
-            android:backgroundTint="#388E3C"
+            android:backgroundTint="@color/dark_green"
             android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:layout_marginTop="12dp" />
+            android:layout_marginBottom="16dp" />
 
         <Button
             android:id="@+id/cyberSecurityButton"
-            android:layout_width="280dp"
-            android:layout_height="56dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Cyber Security"
-            android:backgroundTint="#388E3C"
+            android:backgroundTint="@color/dark_green"
             android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:layout_marginTop="12dp"/>
-
+            android:layout_marginBottom="16dp" />
 
         <Button
             android:id="@+id/appDevButton"
-            android:layout_width="280dp"
-            android:layout_height="56dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="App Development"
-            android:backgroundTint="#388E3C"
+            android:backgroundTint="@color/dark_green"
             android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:layout_marginTop="12dp" />
+            android:layout_marginBottom="16dp" />
 
         <Button
             android:id="@+id/pythonButton"
-            android:layout_width="280dp"
-            android:layout_height="56dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Python"
-            android:backgroundTint="#388E3C"
+            android:backgroundTint="@color/dark_green"
             android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:layout_marginTop="12dp" />
+            android:layout_marginBottom="16dp" />
 
         <Button
             android:id="@+id/basicNetworkButton"
-            android:layout_width="280dp"
-            android:layout_height="56dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Basic Network"
-            android:backgroundTint="#388E3C"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:layout_marginTop="12dp" />
-
+            android:backgroundTint="@color/dark_green"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 
-</LinearLayout>
+    <ImageButton
+        android:id="@+id/btn_profile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="35dp"
+        android:background="@drawable/profilegreen"
+        android:contentDescription="Profile Icon" />
+
+</RelativeLayout>

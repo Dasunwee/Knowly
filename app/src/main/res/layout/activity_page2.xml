@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DFF5D3"> <!-- Light green background -->
+    android:background="@drawable/signup"> <!-- Light green background -->
 
     <LinearLayout
 
@@ -22,13 +22,13 @@
             android:textSize="32sp"
             android:textColor="#2E7D32"
             android:textStyle="bold"
-            android:paddingTop="70dp"
+            android:paddingTop="40dp"
             tools:ignore="HardcodedText" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="24dp"
+            android:paddingBottom="14dp"
             android:text="Create your account"
             android:textColor="#33691E"
             android:textSize="16sp"
@@ -124,9 +124,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Already have an account?"
-                android:textColor="#546E7A"
+                android:text="Already have an account?   "
+                android:textColor="@color/dark_green"
                 android:textSize="14sp"
+                android:textStyle="italic"
                 tools:ignore="HardcodedText" />
 
             <Button
@@ -137,7 +138,8 @@
                 android:focusable="true"
                 android:text=" Login"
                 android:textColor="#FFFFFF"
-                android:textSize="10sp"
+                android:background="#2E7D32"
+                android:textSize="14sp"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText,TouchTargetSizeCheck" />
         </LinearLayout>

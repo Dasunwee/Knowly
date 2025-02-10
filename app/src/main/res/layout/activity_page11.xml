@@ -4,26 +4,49 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CCFFCC">
+    android:background="@drawable/coursed">
 
     <!-- Icons -->
-    <ImageView
-        android:id="@+id/homeIcon"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="56dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/ic_home" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:padding="8dp">
 
-    <ImageView
-        android:id="@+id/profileIcon"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="18dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/ic_profile" />
+        <!-- Home Icon -->
+
+        <ImageButton
+            android:id="@+id/home_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/myhome"
+            android:contentDescription="Home Icon" />
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Profile Icon -->
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/profilegreen"
+            android:contentDescription="Profile Icon" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/headerText"
@@ -32,10 +55,10 @@
         android:layout_marginTop="160dp"
         android:layout_centerHorizontal="true"
         android:text="Quiz Details"
-        android:textSize="24sp"
-        android:textColor="#2C5F2D"
+        android:textSize="46sp"
+        android:textColor="@color/dark_green"
         android:textStyle="bold"
-        android:fontFamily="monospace" />
+         />
 
 
     <TextView
@@ -44,10 +67,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/headerText"
         android:layout_marginTop="16dp"
-        android:background="#388E3C"
+        android:background="@color/dark_green"
         android:padding="8dp"
         android:text="Cyber Security"
-        android:textColor="#FFFFFF"
+        android:textColor="#ffffff"
         android:textSize="20sp"
         android:textStyle="bold"
         android:gravity="center" />
@@ -66,6 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_marginTop="50dp"
             android:padding="12dp"
             android:background="#FFFFFF"
             android:gravity="center_vertical">
@@ -77,13 +101,14 @@
                 android:text="Quiz 1"
                 android:textAlignment="center"
                 android:textSize="18sp"
-                android:textColor="#388E3C"
+                android:textStyle="bold"
+                android:backgroundTint="@color/dark_green"
                 android:paddingStart="8dp" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#388E3C"
+                android:backgroundTint="@color/dark_green"
                 android:paddingHorizontal="16dp"
                 android:text="Enroll Now"
                 android:layout_marginRight="60dp"
@@ -106,15 +131,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Quiz 2"
+                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textSize="18sp"
-                android:textColor="#388E3C"
+                android:backgroundTint="@color/dark_green"
                 android:paddingStart="8dp" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#388E3C"
+                android:backgroundTint="@color/dark_green"
                 android:paddingHorizontal="16dp"
                 android:text="Enroll Now"
                 android:layout_marginRight="60dp"
@@ -134,17 +160,18 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Quiz 2"
+                android:text="Quiz 3"
+                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textSize="18sp"
-                android:textColor="#388E3C"
+                android:backgroundTint="@color/dark_green"
                 android:paddingStart="8dp" />
 
             <Button
                 android:id="@+id/getStartButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#388E3C"
+                android:backgroundTint="@color/dark_green"
                 android:paddingHorizontal="16dp"
                 android:text="Enroll Now"
                 android:layout_marginRight="60dp"

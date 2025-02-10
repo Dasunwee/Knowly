@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A8E6A1"
+    android:background="@drawable/resourced"
     android:padding="16dp">
 
     <!-- Top Bar with Icons -->
@@ -15,12 +16,17 @@
         android:padding="8dp">
 
         <!-- Home Icon -->
-        <ImageView
+
+        <ImageButton
             android:id="@+id/home_icon"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_home"
-            android:layout_marginEnd="16dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/myhome"
             android:contentDescription="Home Icon" />
 
         <!-- Spacer -->
@@ -32,20 +38,15 @@
         <!-- Profile Icon -->
         <ImageButton
             android:id="@+id/btn_profile"
-            android:layout_width="47dp"
-            android:layout_height="46dp"
-            android:layout_alignParentTop="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_alignParentEnd="true"
+            android:layout_margin="35dp"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="@string/profile_button"
-            android:src="@drawable/ic_profile"
-            android:text="profile" />
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/profilegreen"
+            android:contentDescription="Profile Icon" />
     </LinearLayout>
 
     <!-- Title -->
@@ -54,8 +55,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Resources"
-        android:textSize="36sp"
-        android:textColor="#388E3C"
+        android:textSize="46sp"
+        android:textColor="@color/dark_green"
         android:fontFamily="sans-serif-condensed"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
@@ -68,7 +69,7 @@
         android:layout_height="wrap_content"
         android:text="Cyber Security"
         android:textSize="24sp"
-        android:background="#388E3C"
+        android:background="@color/dark_green"
         android:padding="8dp"
         android:textColor="#FFFFFF"
         android:layout_below="@id/title"
@@ -81,73 +82,57 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_below="@id/section_title"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="26dp">
 
         <!-- YouTube Section -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="YouTube:"
-            android:textColor="#388E3C"
-            android:textSize="18sp"
-            android:fontFamily="sans-serif-condensed"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/youtube"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:baselineAlignBottom="false"
+            android:textAlignment="center"
+            app:srcCompat="@drawable/youtube" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="356dp"
             android:layout_height="wrap_content"
-            android:text="https://youtu.be/inWWhr5tnEA\nhttps://youtu.be/v7BNtpw53AA"
-            android:textColor="#0000FF"
+            android:layout_marginBottom="16dp"
             android:autoLink="web"
-            android:layout_marginBottom="16dp" />
+            android:text="https://youtu.be/inWWhr5tnEA\nhttps://youtu.be/v7BNtpw53AA"
+            android:textColor="#0000FF" />
 
         <!-- GitHub Section -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="GitHub:"
-            android:textColor="#388E3C"
-            android:textSize="18sp"
-            android:fontFamily="sans-serif-condensed"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="https://github.com/topics/cybersecurity"
-            android:textColor="#0000FF"
-            android:autoLink="web"
-            android:layout_marginBottom="16dp" />
+        <ImageView
+            android:id="@+id/git"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/git" />
 
         <!-- W3Schools Section -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="W3school:"
-            android:textColor="#388E3C"
-            android:textSize="18sp"
-            android:fontFamily="sans-serif-condensed"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:autoLink="web"
+            android:text="https://github.com/topics/cybersecurity"
+            android:textColor="#0000FF" />
+
+        <ImageView
+            android:id="@+id/w3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/w3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
             android:text="https://www.w3schools.com/cybersecurity/"
-            android:textColor="#0000FF"
-            android:autoLink="web" />
-    </LinearLayout>
+            android:textColor="#0000FF" />
 
-    <Button
-        android:id="@+id/cyberSecurityButton"
-        android:layout_width="280dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="12dp"
-        android:backgroundTint="#388E3C"
-        android:text="Cyber Security"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold" />
+    </LinearLayout>
 
 </RelativeLayout>

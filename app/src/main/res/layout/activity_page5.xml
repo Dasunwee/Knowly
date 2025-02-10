@@ -3,29 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:background="#CCF2CC"
+    android:background="@drawable/explore2"
     android:padding="16dp">
 
     <!-- Profile Button -->
     <ImageButton
         android:id="@+id/btn_profile"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_alignParentTop="true"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_alignParentEnd="true"
+        android:layout_margin="36dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="@string/profile_button"
-        android:elevation="4dp"
-        android:src="@drawable/ic_user"
-        android:text="profile"
-        android:scaleType="centerInside"
-        tools:ignore="TouchTargetSizeCheck" />
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/profilegreen"
+        android:contentDescription="Home Icon" />
 
     <!-- Title -->
     <TextView
@@ -35,8 +27,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="120dp"
         android:text="EXPLORE"
-        android:textColor="#228B22"
-        android:textSize="36sp"
+        android:textColor="@color/dark_green"
+        android:textSize="46sp"
         android:textStyle="bold" />
 
     <!-- Courses Button -->
@@ -46,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="280dp"
-        android:backgroundTint="#228B22"
+        android:backgroundTint="@color/dark_green"
         android:padding="12dp"
         android:text="Courses"
         android:textColor="#FFFFFF" />
@@ -58,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_courses"
         android:layout_marginTop="16dp"
-        android:backgroundTint="#228B22"
+        android:backgroundTint="@color/dark_green"
         android:padding="12dp"
         android:text="Quizzes"
         android:textColor="#FFFFFF" />
@@ -70,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_quizzes"
         android:layout_marginTop="16dp"
-        android:backgroundTint="#228B22"
+        android:backgroundTint="@color/dark_green"
         android:padding="12dp"
         android:text="Resources"
         android:textColor="#FFFFFF" />

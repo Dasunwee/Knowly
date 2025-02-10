@@ -29,7 +29,7 @@ public class page3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to page3 when the signup button is clicked
-                Intent intent = new Intent(page3.this, page4.class);
+                Intent intent = new Intent(page3.this, page5.class);
                 startActivity(intent);
             }
         });
@@ -39,7 +39,7 @@ public class page3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to page3 when the signup button is clicked
-                Intent intent = new Intent(page3.this, page5.class);
+                Intent intent = new Intent(page3.this, page2.class);
                 startActivity(intent);
             }
         });

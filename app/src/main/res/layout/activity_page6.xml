@@ -3,42 +3,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CCF2CC"
+    android:background="@drawable/courses"
     android:padding="16dp">
 
-    <!-- Home Button -->
-    <ImageButton
-        android:id="@+id/btn_home"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="Home Button"
-        android:src="@drawable/ic_home" />
 
-    <!-- Profile Button -->
+
     <ImageButton
         android:id="@+id/btn_profile"
-        android:layout_width="47dp"
+        android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_margin="35dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="Profile Button"
-        android:src="@drawable/ic_profile" />
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/profilegreen"
+        android:contentDescription="Profile Icon" />
 
     <!-- Title -->
     <TextView
@@ -46,9 +26,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="COURSES"
-        android:textSize="36sp"
+        android:textSize="46sp"
         android:textStyle="bold"
-        android:textColor="#228B22"
+        android:textColor="@color/dark_green"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="160dp" />
 
@@ -58,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="UX / UI"
-        android:backgroundTint="#228B22"
+        android:backgroundTint="@color/dark_green"
         android:textColor="#FFFFFF"
         android:layout_marginTop="250dp"
         android:layout_centerHorizontal="true"
@@ -70,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Cyber Security"
-        android:backgroundTint="#228B22"
+        android:backgroundTint="@color/dark_green"
         android:textColor="#FFFFFF"
         android:layout_below="@id/btn_ux_ui"
         android:layout_marginTop="16dp"
@@ -82,7 +62,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="App Development"
-        android:backgroundTint="#228B22"
+        android:backgroundTint="@color/dark_green"
         android:textColor="#FFFFFF"
         android:layout_below="@id/btn_cyber_security"
         android:layout_marginTop="16dp"
@@ -94,8 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Python"
-        android:backgroundTint="#228B22"
-        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/dark_green"       android:textColor="#FFFFFF"
         android:layout_below="@id/btn_app_development"
         android:layout_marginTop="16dp"
         android:padding="12dp" />
@@ -106,7 +85,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Basic Network"
-        android:backgroundTint="#228B22"
+        android:backgroundTint="@color/dark_green"
         android:textColor="#FFFFFF"
         android:layout_below="@id/btn_python"
         android:layout_marginTop="16dp"
