@@ -21,7 +21,7 @@
 
     <!-- Username Input -->
     <EditText
-        android:id="@+id/et_username"
+        android:id="@+id/inputEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Username"
@@ -33,7 +33,7 @@
 
     <!-- Password Input -->
     <EditText
-        android:id="@+id/et_password"
+        android:id="@+id/inputPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"

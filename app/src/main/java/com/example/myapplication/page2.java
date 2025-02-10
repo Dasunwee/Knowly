@@ -30,7 +30,7 @@ public class page2 extends AppCompatActivity {
         setContentView(R.layout.activity_page2);
 
         // Initialize EditText and Buttons
-        emailInput = findViewById(R.id.emailInput);  // Assuming email input field in layout
+        emailInput = findViewById(R.id.emailInput);
         signup = findViewById(R.id.btnSignUp);
         login2 = findViewById(R.id.btnLoginTwo);
         passwordInput = findViewById(R.id.passwordInput);
