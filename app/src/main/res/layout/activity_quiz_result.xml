@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/quizzes"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_green"
+        android:text="Result will be displayed here" />
+
+    <Button
+        android:id="@+id/restart_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Restart Quiz"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:background="@color/dark_green"/>
+    <Button
+        android:id="@+id/quiz_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Back to Quizzes"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:background="@color/dark_green"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

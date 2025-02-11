@@ -115,37 +115,17 @@
                     android:textColor="#ff0000"
                     android:textSize="16sp"
                     android:layout_gravity="center_vertical" />
+
             </LinearLayout>
 
             <!-- GitHub Section -->
 
-            <LinearLayout
+            <Button
+                android:id="@+id/youtubeBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:clickable="true"
-                android:focusable="true"
-
-                android:orientation="horizontal"
-                android:padding="8dp">
-
-                <ImageView
-                    android:id="@+id/w3"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:contentDescription="W3Schools Icon"
-                    app:srcCompat="@drawable/netcad" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="16dp"
-                    android:text="Netcad Academy "
-                    android:textColor="@color/dark_blue"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
+                android:layout_weight="1"
+                android:text="Explore Now" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -157,7 +137,7 @@
                 android:padding="8dp">
 
                 <ImageView
-                    android:id="@+id/w3"
+                    android:id="@+id/netcad"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:contentDescription="W3Schools Icon"
@@ -174,6 +154,13 @@
                     android:textStyle="bold" />
 
             </LinearLayout>
+
+            <Button
+                android:id="@+id/w3Btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EXPLORE NOW" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -199,6 +186,12 @@
                     android:textSize="16sp"
                     android:layout_gravity="center_vertical" />
             </LinearLayout>
+
+            <Button
+                android:id="@+id/gitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EXPLORE NOW" />
 
 
         </LinearLayout>

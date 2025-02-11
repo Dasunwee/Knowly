@@ -12,6 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
+        <activity android:name=".QuizActivity"/>
+        <activity android:name=".QuizResultActivity" />
+
+
+        <activity
+            android:name=".quiz_result"
+            android:exported="false" />
+        <activity
+            android:name=".quiz"
+            android:exported="false" />
         <activity
             android:name=".page11"
             android:exported="false" />
