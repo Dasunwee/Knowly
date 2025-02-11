@@ -84,6 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#ffffff"
+            android:background="#ffffff"
             android:orientation="vertical"
             android:padding="16dp"
             android:elevation="4dp">
@@ -94,7 +95,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:background="@color/dark_green"
+                android:background="#ffffff"
                 android:clickable="true"
                 android:focusable="true">
 
@@ -111,29 +112,74 @@
                     android:layout_marginLeft="16dp"
                     android:text="YouTube Videos"
                     android:textStyle="bold"
-                    android:textColor="#ffffff"
+                    android:textColor="#ff0000"
                     android:textSize="16sp"
                     android:layout_gravity="center_vertical" />
             </LinearLayout>
 
-            <TextView
+            <!-- GitHub Section -->
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:autoLink="web"
-                android:padding="10dp"
-                android:background="@color/light_green"
-                android:text="https://youtu.be/inWWhr5tnEA\nhttps://youtu.be/v7BNtpw53AA"
-                android:textColor="#0000FF"
-                android:textStyle="bold" />
+                android:clickable="true"
+                android:focusable="true"
 
-            <!-- GitHub Section -->
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/w3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="W3Schools Icon"
+                    app:srcCompat="@drawable/netcad" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="Netcad Academy "
+                    android:textColor="@color/dark_blue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/w3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="W3Schools Icon"
+                    app:srcCompat="@drawable/w3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="W3Schools Cybersecurity"
+                    android:textColor="#2e8b57"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:background="@color/dark_green"
                 android:clickable="true"
                 android:focusable="true">
                 <ImageView
@@ -148,58 +194,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:text="GitHub Cybersecurity"
-                    android:textColor="#ffffff"
+                    android:textColor="#000000"
                     android:textStyle="bold"
                     android:textSize="16sp"
                     android:layout_gravity="center_vertical" />
             </LinearLayout>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:autoLink="web"
-                android:background="@color/light_green"
-                android:padding="10dp"
-                android:textStyle="bold"
-                android:text="https://github.com/topics/cybersecurity"
-                android:textColor="#0000FF" />
-
-            <!-- W3Schools Section -->
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:background="@color/dark_green"
-                android:clickable="true"
-                android:focusable="true">
-                <ImageView
-                    android:id="@+id/w3"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    app:srcCompat="@drawable/w3"
-                    android:contentDescription="W3Schools Icon" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:text="W3Schools Cybersecurity"
-                    android:textColor="#ffffff"
-                    android:textStyle="bold"
-                    android:textSize="16sp"
-                    android:layout_gravity="center_vertical" />
-
-            </LinearLayout>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autoLink="web"
-                android:padding="10dp"
-                android:textStyle="bold"
-                android:background="@color/light_green"
-                android:text="https://www.w3schools.com/cybersecurity/"
-                android:textColor="#0000FF" />
 
 
         </LinearLayout>

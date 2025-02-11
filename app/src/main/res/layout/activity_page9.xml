@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/quizd">
+    android:background="@drawable/explore1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_alignParentEnd="true"
-            android:layout_margin="30dp"
+            android:layout_margin="60dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="22dp"
             android:layout_marginBottom="6dp"
@@ -39,7 +39,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_alignParentEnd="true"
-            android:layout_margin="35dp"
+            android:layout_margin="60dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="22dp"
             android:layout_marginBottom="6dp"
@@ -52,7 +52,7 @@
         android:id="@+id/headerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="200dp"
         android:layout_centerHorizontal="true"
         android:text="Course Details"
         android:textSize="46sp"
@@ -84,7 +84,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:background="#E6FFE6"
+
         android:orientation="vertical"
         android:padding="16dp"
         android:elevation="4dp">
@@ -96,8 +96,9 @@
             android:layout_height="wrap_content"
             android:text="This introductory course takes you inside the world of cybersecurity. You will learn cybersecurity basics to protect your personal digital life and gain insights into the biggest security challenges companies, governments, and educational institutions face today. Cybersecurity professionals who can protect and defend an organization’s network are in high demand."
             android:textSize="16sp"
+            android:textAlignment="center"
             android:lineSpacingExtra="4dp"
-            android:textColor="#2C5F2D"
+            android:textColor="#000000"
             android:fontFamily="sans-serif" />
 
         <!-- Enroll Button -->
