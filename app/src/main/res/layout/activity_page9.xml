@@ -103,7 +103,7 @@
 
         <!-- Enroll Button -->
         <Button
-            android:id="@+id/enrollButton"
+            android:id="@+id/start_course_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

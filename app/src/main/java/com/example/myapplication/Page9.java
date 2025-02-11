@@ -7,9 +7,6 @@ import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class Page9 extends AppCompatActivity {
 
@@ -17,7 +14,6 @@ public class Page9 extends AppCompatActivity {
     private ImageButton home;
 
     private Button enroll;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,23 +24,23 @@ public class Page9 extends AppCompatActivity {
         // Initialize UI components
         home = findViewById(R.id.home_icon);
         profile = findViewById(R.id.btn_profile);
-        enroll = findViewById(R.id.enrollButton);
+        enroll = findViewById(R.id.start_course_button);
 
         // Set click listeners
         home.setOnClickListener(v -> navigateTo(page5.class));
         profile.setOnClickListener(v -> navigateTo(page3.class));
-        enroll.setOnClickListener(v -> openExternalLink("https://www.netacad.com/courses/introduction-to-cybersecurity"));
 
+        // Set the click listener for the Enroll button
+        enroll.setOnClickListener(v -> {
+            // Open the CourseActivity when the Enroll button is clicked
+            Intent intent = new Intent(Page9.this, CourseActivity.class);
+            startActivity(intent);
+        });
     }
+
     // Utility method for navigation
     private void navigateTo(Class<?> targetPage) {
         startActivity(new Intent(Page9.this, targetPage));
-    }
-
-    private void openExternalLink(String url) {
-        Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(android.net.Uri.parse(url));
-        startActivity(intent);
     }
 
 }
