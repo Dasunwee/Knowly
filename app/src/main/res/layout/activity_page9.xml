@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:padding="8dp">
 
-        <!-- Home Icon -->
+
 
         <ImageButton
             android:id="@+id/home_icon"
