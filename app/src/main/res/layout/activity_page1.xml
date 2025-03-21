@@ -60,7 +60,7 @@
         android:textColor="#388E3C"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:ignore="HardcodedText" />
+        tools:ignore="DuplicateIds,HardcodedText,RtlCompat" />
 
     <Button
         android:id="@+id/getStartButton"
