@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup"
+    android:padding="16dp"
+    >
+
+    <!-- Welcome Message -->
+    <TextView
+
+        android:layout_margin="58dp"
+        android:textAlignment="center"
+        android:id="@+id/tvWelcome"
+        android:textColor="@color/dark_green"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Admin Panel!"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Manage Resources Button -->
+    <Button
+        android:id="@+id/btnManageResources"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Resources"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/dark_green"
+        android:layout_below="@id/tvWelcome"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <!-- Manage Courses Button -->
+    <Button
+        android:id="@+id/btnManageCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/dark_green"
+        android:text="Manage Courses"
+        android:layout_below="@id/btnManageResources"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <!-- Manage Quizzes Button -->
+    <Button
+        android:id="@+id/btnManageQuizzes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/dark_green"
+        android:text="Manage Quizzes"
+        android:layout_below="@id/btnManageCourses"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+</RelativeLayout>

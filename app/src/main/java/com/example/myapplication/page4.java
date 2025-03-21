@@ -17,8 +17,11 @@ public class page4 extends AppCompatActivity {
     private Button createAcc;
 
     private EditText inputEmail;
-
     private EditText inputPassword;
+
+    // Admin credentials
+    private static final String ADMIN_EMAIL = "admin@knowly.com";
+    private static final String ADMIN_PASSWORD = "admin@123";
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -26,8 +29,8 @@ public class page4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page4);
 
-        //EditText action
-        inputEmail= findViewById(R.id.inputEmail);
+        // EditText action
+        inputEmail = findViewById(R.id.inputEmail);
         inputPassword = findViewById(R.id.inputPassword);
 
         // Login button action
@@ -40,11 +43,21 @@ public class page4 extends AppCompatActivity {
                 showToast("Email is required.");
             } else if (!isValidEmail(email)) {
                 showToast("Please enter a valid email address.");
-            }else if (password.isEmpty()){
-                showToast("Please enter your password");
+            } else if (password.isEmpty()) {
+                showToast("Please enter your password.");
             } else {
-                Intent intent = new Intent(page4.this, page5.class);
-                startActivity(intent);
+                // Check if the credentials match the admin credentials
+                if (email.equals(ADMIN_EMAIL) && password.equals(ADMIN_PASSWORD)) {
+                    // Redirect to Admin Panel
+                    Intent intent = new Intent(page4.this, AdminPanelActivity.class);
+                    startActivity(intent);
+                    showToast("Welcome, Admin!");
+                } else {
+                    // Redirect to regular user page (page5.java)
+                    Intent intent = new Intent(page4.this, page5.class);
+                    startActivity(intent);
+                    showToast("Login successful!");
+                }
             }
         });
 

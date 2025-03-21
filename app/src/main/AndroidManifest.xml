@@ -13,6 +13,36 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".ManageQuizzesActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".ItemQuizActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".ManageQuizzesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ItemQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageQuestionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ItemQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".item_resource"
+            android:exported="false" />
+        <activity
+            android:name=".ManageCoursesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageResourcesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPanelActivity"
+            android:exported="false" />
+        <activity
             android:name=".page11"
             android:exported="false" />
         <activity
