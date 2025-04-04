@@ -6,6 +6,15 @@
     android:padding="16dp">
 
     <!-- Add/Update Quiz Section -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Quizzes"
+        android:textAlignment="center"
+        android:textColor="#529754"
+        android:textSize="24sp" />
+
     <EditText
         android:id="@+id/etQuizName"
         android:layout_width="match_parent"

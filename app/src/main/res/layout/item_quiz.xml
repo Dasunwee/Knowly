@@ -3,35 +3,58 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="16dp"
+    android:background="#E8F5E9">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Quizzes"
+        android:textAlignment="center"
+        android:textColor="#07380B"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/tvQuizName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quiz Name"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+    android:paddingBottom="4dp" />
 
     <TextView
         android:id="@+id/tvQuizDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quiz Description"
-        android:textSize="14sp"
-        android:layout_marginTop="4dp"/>
+        android:textSize="16sp"
+        android:textColor="#2E7D32"
+    android:paddingBottom="8dp"/>
 
     <Button
         android:id="@+id/btnUpdateQuiz"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Update"
-        android:layout_marginTop="8dp"/>
+        android:text="Update Quiz"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#388E3C"
+
+    android:padding="12dp"
+    android:elevation="4dp"
+    android:layout_marginTop="8dp"/>
 
     <Button
         android:id="@+id/btnDeleteQuiz"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Delete"
-        android:layout_marginTop="8dp"/>
+        android:text="Delete Quiz"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#D32F2F"
+
+    android:padding="12dp"
+    android:elevation="4dp"
+    android:layout_marginTop="8dp"/>
 </LinearLayout>
