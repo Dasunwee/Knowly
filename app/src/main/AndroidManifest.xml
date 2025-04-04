@@ -12,12 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
+
+        <activity
+            android:name=".EditQuestionsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".ManageQuizzesActivity"
             android:exported="false" />
-        <activity android:name=".edit_profile"
+        <activity
+            android:name=".edit_profile"
             android:exported="false" />
-
         <activity
             android:name=".ItemQuizActivity"
             android:exported="false" />
@@ -27,7 +32,6 @@
         <activity
             android:name=".ManageQuestionsActivity"
             android:exported="false" />
-
         <activity
             android:name=".item_resource"
             android:exported="false" />
@@ -70,6 +74,8 @@
         <activity
             android:name=".page2"
             android:exported="false" />
+
+
         <activity
             android:name=".page1"
             android:exported="true">

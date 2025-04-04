@@ -38,13 +38,25 @@
         android:id="@+id/btnUpdateQuiz"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Update Quiz"
+        android:text="Edit Quiz"
         android:textColor="#FFFFFF"
         android:backgroundTint="#388E3C"
 
     android:padding="12dp"
     android:elevation="4dp"
     android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnAddQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Questions"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/dark_blue"
+        android:padding="12dp"
+        android:elevation="4dp"
+        android:layout_marginTop="8dp" />
+
 
     <Button
         android:id="@+id/btnDeleteQuiz"
