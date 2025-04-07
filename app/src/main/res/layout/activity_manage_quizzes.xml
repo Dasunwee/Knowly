@@ -11,8 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add Quizzes"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
         android:textAlignment="center"
-        android:textColor="#529754"
+        android:textColor="@color/dark_green"
         android:textSize="24sp" />
 
     <EditText
@@ -33,15 +35,26 @@
         android:id="@+id/btnAddQuiz"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
+        android:backgroundTint="@color/dark_green"
+        android:padding="10dp"
         android:text="Add Quiz"
-        android:layout_marginBottom="16dp"/>
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        />
 
     <Button
         android:id="@+id/btnUpdateQuiz"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/light_green"
+        android:padding="10dp"
         android:text="Update Quiz"
-        android:layout_marginBottom="32dp"/>
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:textColor="@color/dark_green"/>
 
     <!-- List of Quizzes -->
     <ListView

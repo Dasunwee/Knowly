@@ -46,12 +46,13 @@
             android:id="@+id/btnDeleteResource"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="Delete"
-            android:textColor="@android:color/white"
-            android:background="@android:color/holo_red_dark"
             android:padding="8dp"
-            android:layout_marginStart="4dp" />
+            android:layout_marginEnd="4dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="Delete"
+            android:textColor="#ffffff"
+            />
     </LinearLayout>
 
 </LinearLayout>

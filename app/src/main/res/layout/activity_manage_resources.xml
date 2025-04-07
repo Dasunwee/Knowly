@@ -12,7 +12,7 @@
         android:textAlignment="center"
         android:textColor="@color/dark_green"
         android:layout_marginTop="40dp"
-        android:textSize="20dp"
+        android:textSize="25dp"
         android:textStyle="bold" />
     <!-- Add Resource Section -->
     <EditText
@@ -34,18 +34,24 @@
         android:id="@+id/btnAddResource"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/dark_green"
         android:text="Add Resource"
-        android:textColor="@color/white"
-        android:background="@color/dark_green"
-        android:layout_marginBottom="12dp"/>
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:textColor="#ffffff" />
 
     <!-- List of Resources -->
     <Button
         android:id="@+id/cancel_action"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Cancel" />
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/light_green"
+        android:text="cancel"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:textColor="@color/dark_green" />
 
     <ListView
         android:id="@+id/listViewResources"

@@ -35,6 +35,7 @@ public class ResourceAdapter extends ArrayAdapter<Resource> {
 
         TextView tvResourceName = convertView.findViewById(R.id.tvResourceName);
         TextView tvResourceLink = convertView.findViewById(R.id.tvResourceLink);
+        Button btnUpdateResource = convertView.findViewById(R.id.btnUpdateResource);
         Button btnDeleteResource = convertView.findViewById(R.id.btnDeleteResource);
 
         tvResourceName.setText(resource.getName());
@@ -42,7 +43,16 @@ public class ResourceAdapter extends ArrayAdapter<Resource> {
 
         // Delete button click listener
         btnDeleteResource.setOnClickListener(v -> {
-            ((ManageResourcesActivity) context).deleteResource(resource.getId());
+            if (context instanceof ManageResourcesActivity) {
+                ((ManageResourcesActivity) context).deleteResource(resource.getId());
+            }
+        });
+
+        // Update button click listener
+        btnUpdateResource.setOnClickListener(v -> {
+            if (context instanceof ManageResourcesActivity) {
+                ((ManageResourcesActivity) context).editResource(resource);
+            }
         });
 
         return convertView;

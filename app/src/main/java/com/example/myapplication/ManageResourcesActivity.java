@@ -8,7 +8,6 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -27,6 +26,7 @@ public class ManageResourcesActivity extends AppCompatActivity {
     private ArrayList<Resource> resourceList;
 
     private FirebaseFirestore firestore;
+    private String editingResourceId = null; // Track currently editing resource
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -51,8 +51,14 @@ public class ManageResourcesActivity extends AppCompatActivity {
         // Load resources from Firestore
         loadResources();
 
-        // Add resource button click listener
-        btnAddResource.setOnClickListener(v -> addResource());
+        // Add or Update button logic
+        btnAddResource.setOnClickListener(v -> {
+            if (editingResourceId != null) {
+                updateResource();
+            } else {
+                addResource();
+            }
+        });
     }
 
     private void loadResources() {
@@ -65,7 +71,7 @@ public class ManageResourcesActivity extends AppCompatActivity {
                             String id = document.getId();
                             String name = document.getString("name");
                             String link = document.getString("link");
-                            String icon = document.getString("icon"); // You can store icon URLs in Firestore
+                            String icon = document.getString("icon"); // Optional
                             resourceList.add(new Resource(id, name, link, icon));
                         }
                         resourceAdapter.notifyDataSetChanged();
@@ -84,22 +90,43 @@ public class ManageResourcesActivity extends AppCompatActivity {
         } else if (link.isEmpty()) {
             Toast.makeText(this, "Resource link is required.", Toast.LENGTH_SHORT).show();
         } else {
-            // Create a new resource object
             Map<String, Object> resource = new HashMap<>();
             resource.put("name", name);
             resource.put("link", link);
-            resource.put("icon", "default_icon_url"); // Replace with actual icon URL or logic
 
-            // Add resource to Firestore
             firestore.collection("resources")
                     .add(resource)
                     .addOnSuccessListener(documentReference -> {
                         Toast.makeText(this, "Resource added successfully!", Toast.LENGTH_SHORT).show();
-                        etResourceName.setText("");
-                        etResourceLink.setText("");
-                        loadResources(); // Refresh the list
+                        resetForm();
+                        loadResources();
                     })
                     .addOnFailureListener(e -> Toast.makeText(this, "Failed to add resource: " + e.getMessage(), Toast.LENGTH_SHORT).show());
+        }
+    }
+
+    private void updateResource() {
+        String updatedName = etResourceName.getText().toString().trim();
+        String updatedLink = etResourceLink.getText().toString().trim();
+
+        if (updatedName.isEmpty()) {
+            Toast.makeText(this, "Resource name is required.", Toast.LENGTH_SHORT).show();
+        } else if (updatedLink.isEmpty()) {
+            Toast.makeText(this, "Resource link is required.", Toast.LENGTH_SHORT).show();
+        } else {
+            Map<String, Object> updatedData = new HashMap<>();
+            updatedData.put("name", updatedName);
+            updatedData.put("link", updatedLink);
+
+            firestore.collection("resources")
+                    .document(editingResourceId)
+                    .update(updatedData)
+                    .addOnSuccessListener(aVoid -> {
+                        Toast.makeText(this, "Resource updated successfully!", Toast.LENGTH_SHORT).show();
+                        resetForm();
+                        loadResources();
+                    })
+                    .addOnFailureListener(e -> Toast.makeText(this, "Update failed: " + e.getMessage(), Toast.LENGTH_SHORT).show());
         }
     }
 
@@ -109,8 +136,23 @@ public class ManageResourcesActivity extends AppCompatActivity {
                 .delete()
                 .addOnSuccessListener(aVoid -> {
                     Toast.makeText(this, "Resource deleted successfully!", Toast.LENGTH_SHORT).show();
-                    loadResources(); // Refresh the list
+                    loadResources();
                 })
                 .addOnFailureListener(e -> Toast.makeText(this, "Failed to delete resource: " + e.getMessage(), Toast.LENGTH_SHORT).show());
+    }
+
+    public void editResource(Resource resource) {
+        editingResourceId = resource.getId();
+        etResourceName.setText(resource.getName());
+        etResourceLink.setText(resource.getLink());
+        btnAddResource.setText("Update Resource");
+        etResourceName.requestFocus();
+    }
+
+    private void resetForm() {
+        editingResourceId = null;
+        etResourceName.setText("");
+        etResourceLink.setText("");
+        btnAddResource.setText("Add Resource");
     }
 }

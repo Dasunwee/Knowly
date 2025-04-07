@@ -53,6 +53,12 @@
         android:layout_height="wrap_content"
         android:hint="Option D" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correct Answer:"
+        android:layout_marginTop="16dp"/>
+
     <Spinner
         android:id="@+id/spCorrectOption"
         android:layout_width="match_parent"

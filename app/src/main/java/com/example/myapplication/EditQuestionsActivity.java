@@ -1,7 +1,7 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
-import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -11,9 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class EditQuestionsActivity extends AppCompatActivity {
@@ -32,7 +30,7 @@ public class EditQuestionsActivity extends AppCompatActivity {
         // Initialize Firestore
         firestore = FirebaseFirestore.getInstance();
 
-        // Get passed data from intent
+        // Get data from intent
         quizId = getIntent().getStringExtra("quizId");
         questionId = getIntent().getStringExtra("questionId");
         String questionText = getIntent().getStringExtra("questionText");
@@ -48,15 +46,26 @@ public class EditQuestionsActivity extends AppCompatActivity {
         spCorrectOption = findViewById(R.id.spCorrectOption);
         btnUpdateQuestion = findViewById(R.id.btnUpdateQuestion);
 
+        // Set up spinner adapter for correct options (A-D)
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+                this,
+                R.array.options_array,
+                android.R.layout.simple_spinner_item
+        );
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spCorrectOption.setAdapter(adapter);
+
         // Populate fields with existing data
         etQuestionText.setText(questionText);
-        etOptionA.setText(options[0]);
-        etOptionB.setText(options[1]);
-        etOptionC.setText(options[2]);
-        etOptionD.setText(options[3]);
+        if (options != null && options.length == 4) {
+            etOptionA.setText(options[0]);
+            etOptionB.setText(options[1]);
+            etOptionC.setText(options[2]);
+            etOptionD.setText(options[3]);
+        }
         spCorrectOption.setSelection(correctIndex);
 
-        // Set up update button
+        // Set update button action
         btnUpdateQuestion.setOnClickListener(v -> updateQuestion());
     }
 
@@ -74,17 +83,20 @@ public class EditQuestionsActivity extends AppCompatActivity {
             return;
         }
 
+        // Prepare options map
         Map<String, String> options = new HashMap<>();
         options.put("A", optionA);
         options.put("B", optionB);
         options.put("C", optionC);
         options.put("D", optionD);
 
+        // Prepare question update
         Map<String, Object> updatedQuestion = new HashMap<>();
         updatedQuestion.put("question", questionText);
         updatedQuestion.put("options", options);
         updatedQuestion.put("correctOption", correctOption);
 
+        // Update Firestore
         firestore.collection("quizzes").document(quizId)
                 .collection("questions").document(questionId)
                 .update(updatedQuestion)
